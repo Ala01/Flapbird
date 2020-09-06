@@ -6,6 +6,8 @@ som_HIT.src =  './efeitos/hit.wav';
 
 const sprites = new Image();
 sprites.src = './sprites/sprites.png';
+//sprites.src = './sprites/spritesBlack.png';
+//sprites.src = './sprites/spritesPunk.png';
 
 const canvas = document.querySelector('canvas');
 const contexto = canvas.getContext('2d');
@@ -22,6 +24,7 @@ const planoDeFundo = {
 
   desenha() {
     contexto.fillStyle = '#70c5ce';
+    //contexto.fillStyle = '#ff4f64'; //BlackBird
     contexto.fillRect(0,0, canvas.width, canvas.height)
 
     contexto.drawImage(
